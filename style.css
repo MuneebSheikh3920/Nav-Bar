@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head-sec{
+    background-color: #121212;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.cross{
+    display: flex;
+}
+.inner-left{
+
+    width: 290px;
+    height: auto;
+}
+.logo{
+    border: 0.5px solid #1d1d1d;
+    width: 100%;
+    height: 100px;
+}
+.inner2{
+    border: 0.5px solid #1d1d1d;
+    width: 100%;
+    height: 350px;
+}
+.inner2 ul{
+    list-style-type: none;
+    padding-top: 10px;
+}
+.inner2 li{
+    color: white;
+    font-size: 17px;
+    margin-left: 50px;
+    padding: 15px 0 0 0 ;
+}
+.inner2 h1{
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+    padding-top: 30px;
+}
+.inner3{
+    border: 0.5px solid #1d1d1d;
+    width: 100%;
+    height: 150px;
+}
+.inner3 ul{
+    list-style-type: none;
+    padding-top: 10px;
+}
+.inner3 li{
+    color: white;
+    font-size: 17px;
+    margin-left: 40px;
+    padding: 10px 0 0 0 ;
+}
+.inner-mid{
+    width: 720px;
+    height: auto;
+}
+.headings{
+    width: 100%;
+    height: 95px;
+    border: 1px solid  #1d1d1d;
+}
+.headings h1{
+    color: white;
+    padding: 25px 0 0 35px;
+    font-size: 38px;
+}
+.inner-right{
+    border: 0.5px solid #1d1d1d;
+    width: 350px;
+    background-color:#1d1d1d;
+    height: auto;
+}
+.content ul{
+    list-style-type: none;
+}
+.content{
+    height: 500px;
+    padding: 100px 0 0 40px;
+}
+input{
+    width: 240px;
+    height: 65px;
+    border-radius: 50px;
+    border: 0.5px solid black;
+    padding: 0 0 0 30px;
+    background-color: transparent;
+}
+h2{
+    padding: 25px 0 0 0;
+    color: white;
+    font-size: 30px;
+}
+.content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-top: 20px;
+}
+.content li{
+    color: white;
+    font-size: 20px;
+}
+.inner-right svg{
+    float: right;
+}
+
+.show-div{
+    margin-top: 250px;
+}
+.blue{
+    background-color: rgb(114, 114, 240);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 110px;
+}
+.pink{
+    background-color: rgb(226, 134, 100);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 40px;
+    clip-path: inset(0 0 50% 0);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px){
+    .inner-left{
+        display: none;
+    }
+    .inner-right{
+        display: block;
+        width: 0px;
+    }
+    .inner-right > * {
+        display: none; 
+    }
+    .inner-right .cross1 {
+        display: block;
+    }
+
+    .show-div{
+        margin-top: 10px;
+        float: right;
+    }
+    .headings h1{
+        font-size: 20px;
+    }
+    .inner-right .cross1{
+        margin-right: 20px;
+    }
+
+}
